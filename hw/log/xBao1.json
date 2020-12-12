@@ -1,0 +1,142 @@
+[
+  {
+    "juNum": 1,
+    "people": 3,
+    "oldZhuang": 242,
+    "oldXian": 207,
+    "zhuangName": "li",
+    "resultSF": "平局",
+    "exit": [],
+    "list": [
+      {
+        "name": "li",
+        "coin": 242,
+        "sf": "庄",
+        "ds": 22
+      },
+      {
+        "name": "zs",
+        "coin": 207,
+        "sf": "闲",
+        "ds": 26
+      }
+    ]
+  },
+  {
+    "juNum": 1,
+    "people": 3,
+    "oldZhuang": 242,
+    "oldXian": 219,
+    "zhuangName": "li",
+    "resultSF": "平局",
+    "exit": [],
+    "list": [
+      {
+        "name": "li",
+        "coin": 242,
+        "sf": "庄",
+        "ds": 22
+      },
+      {
+        "name": "wa",
+        "coin": 219,
+        "sf": "闲",
+        "ds": 23
+      }
+    ]
+  },
+  {
+    "juNum": 2,
+    "people": 3,
+    "oldZhuang": 242,
+    "oldXian": 207,
+    "zhuangName": "li",
+    "resultSF": "庄",
+    "exit": [],
+    "list": [
+      {
+        "name": "li",
+        "coin": 342,
+        "sf": "庄",
+        "ds": 15
+      },
+      {
+        "name": "zs",
+        "coin": 107,
+        "sf": "闲",
+        "ds": 15
+      }
+    ]
+  },
+  {
+    "juNum": 2,
+    "people": 3,
+    "oldZhuang": 342,
+    "oldXian": 219,
+    "zhuangName": "li",
+    "resultSF": "闲",
+    "exit": [],
+    "list": [
+      {
+        "name": "li",
+        "coin": 242,
+        "sf": "庄",
+        "ds": 15
+      },
+      {
+        "name": "wa",
+        "coin": 319,
+        "sf": "闲",
+        "ds": 20
+      }
+    ]
+  },
+  {
+    "juNum": 3,
+    "people": 3,
+    "oldZhuang": 242,
+    "oldXian": 107,
+    "zhuangName": "li",
+    "resultSF": "闲",
+    "exit": [],
+    "list": [
+      {
+        "name": "li",
+        "coin": 142,
+        "sf": "庄",
+        "ds": 15
+      },
+      {
+        "name": "zs",
+        "coin": 207,
+        "sf": "闲",
+        "ds": 21
+      }
+    ]
+  },
+  {
+    "juNum": 3,
+    "people": 3,
+    "oldZhuang": 142,
+    "oldXian": 319,
+    "zhuangName": "li",
+    "resultSF": "闲",
+    "exit": [
+      "li"
+    ],
+    "list": [
+      {
+        "name": "li",
+        "coin": 42,
+        "sf": "庄",
+        "ds": 15
+      },
+      {
+        "name": "wa",
+        "coin": 419,
+        "sf": "闲",
+        "ds": 17
+      }
+    ]
+  }
+]

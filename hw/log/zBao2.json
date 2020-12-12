@@ -1,0 +1,46 @@
+[
+  {
+    "juNum": 1,
+    "people": 3,
+    "oldZhuang": 266,
+    "oldXian": 208,
+    "zhuangName": "zs",
+    "exit": [],
+    "resultSF": "闲",
+    "zhuang": {
+      "name": "zs",
+      "coin": 166,
+      "sf": "庄",
+      "ds": 25
+    },
+    "xian": {
+      "name": "li",
+      "coin": 308,
+      "sf": "闲",
+      "ds": 15
+    }
+  },
+  {
+    "juNum": 1,
+    "people": 3,
+    "oldZhuang": 166,
+    "oldXian": 248,
+    "zhuangName": "zs",
+    "exit": [
+      "zs"
+    ],
+    "resultSF": "闲",
+    "zhuang": {
+      "name": "zs",
+      "coin": 66,
+      "sf": "庄",
+      "ds": 25
+    },
+    "xian": {
+      "name": "wa",
+      "coin": 348,
+      "sf": "闲",
+      "ds": 18
+    }
+  }
+]
