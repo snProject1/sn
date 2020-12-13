@@ -444,25 +444,115 @@ from math import sqrt
 #         a=-1
 # print(a)
 
-# !/usr/bin/python3
+# 12点积
+# def hasDJ(x,y):
+#     if len(x)!=len(y):
+#         print("没有点积")
+#         return False
+#     else:
+#         return True
+# a=[1,3,8]
+# b=[2,3,6]
+# dj=0
+# if hasDJ(a,b):
+#     for i in range(0,len(a)):
+#         dj+=a[i]*b[i]
+# print("点积是{}".format(dj))
 
-import sys
-def fibonacci(n):  # 生成器函数 - 斐波那契
-    a, b, counter = 0, 1, 0
-    while True:
-        if (counter > n):
-            return
-        yield a
-        a, b = b, a + b
-        counter += 1
+#13.求函数的 运行时间  输出["f1|9","f2|5"]
+# s=["f1 enter 10","f2 enter 18","f1 exit 12","f2 exit 21"]
+# s=["f1 enter 10","f1 exit 18","f1 enter 12","f1 exit 17"]
+# fundict={}
+# for i in s:
+#     fun=i.split(" ")
+#     key = fundict.keys()
+#     if fun[0] in key:
+#         fundict[fun[0]]=int(fun[2])-int(fundict[fun[0]])
+#     else:
+#         fundict[fun[0]] = fun[2]
+#
+# res=[]
+# for f in fundict.items():
+#     s=f[0]+"|"+str(f[1])
+#     res.append(s)
+# print(res)
 
-f = fibonacci(10)  # f 是一个迭代器，由生成器返回生成
 
-while True:
-    try:
-        print(next(f), end=" ")
-    except StopIteration:
-        sys.exit()
+# 14 查询区间
+#
+# def findNum(alisst,target):
+#     f=False
+#     for a in alisst:
+#        if a[0]<=target<=a[1]:
+#            f=True
+#     return f
+# a=[[100,1100],[230,1230],[300,1300]]
+# if findNum(a,-2):
+#     print("在区间")
+# else:
+#     print("不在区间")
+
+
+# 17数组剔除元素后的乘积
+# a=[2,4,3,9]
+# b=[]*3
+# for i in range(0,len(a)):
+#     c=1
+#     for j in range(0,len(a)):
+#         if i!=j:
+#             c*=a[j]
+#     b.append(c)
+# print(b)
+
+# 20 找不同
+# a="abcd"
+# b="abcde"
+# c=[0]*len(a)
+# for i in range(0,len(a)):
+#     if ord(a[i]) - ord(b[i])!=0:
+#         print("插入的字符是{}".format(b[i]))
+#         break
+#     elif i==len(a)-1:
+#         print("插入的字符是{}".format(b[-1]))
+
+# 18键盘的一行
+# s=["hello","dad","jkla","jkn","zix"]
+# jp=["qwertyuiop","asdfghjkl","zxcvbnm"]
+# for i in s:
+#     for j in jp:
+#         a=True
+#         for ii in i:
+#             if  ii  not in j:
+#                 a=False
+#         if a:
+#             print(i+"在一行")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

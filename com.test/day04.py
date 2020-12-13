@@ -468,7 +468,13 @@ import time
 # print(res)
 
 
-
-
+a=set(["a","s","d"])
+s=["asdfghjkl"]
+# a.sort()
+# a=set(a)
+print(a.issubset(s))
+# a = [1,2,3,4]
+# b = set([2,1,6])
+# print(b.issubset(a))
 
 
