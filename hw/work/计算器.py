@@ -24,64 +24,64 @@ def zhishumi(x, y):
     """指数幂"""
     return x ** y
 # 日志写入
-jisuanqi=open("jisuanqi.txt",mode="w",encoding="utf-8")
-s="选择运算：1、相加 2、相减 3、相乘 4、相除  5、整除 6、取余 7、指数幂"
-jisuanqi.write("提示信息:"+s)
-jisuanqi.write("\n")
-
-for i in range(0,7):
-    a=int(input("请输入第一个1-99999以内数字"))
-    while True:
-        if 1<a<99999:
-            c=int(input("请输入第二个1-99999以内数字"))
-            break
-        else:
-            jisuanqi.write("数字有误\n")
-            print("输入的数字不在范围内，请重新输入")
-            a = int(input("请输入第一个1-99999以内数字"))
-
-    print(s)
-    dict={}
-    b=int(input("请输入运算符对应的标码"))
-    dict["xuhao"] = b
-    if b==1:
-        jia=add(a, c)
-        dict["jieguo"]=jia
-        # print(jia)
-    elif b==2:
-        jian=jian(a, c)
-        dict["jieguo"] = jian
-        # print(jian)
-    elif b==3:
-        cheng=cheng(a, c)
-        dict["jieguo"] = cheng
-        # print(cheng)
-    elif b==4:
-        chu=chu(a, c)
-        dict["jieguo"] = chu
-        # print(chu)
-    elif b==5:
-        zhengchu=zhengchu(a, c)
-        dict["jieguo"] = zhengchu
-        # print(zhengchu)
-    elif b==6:
-        quyu=yu(a,c)
-        dict["jieguo"] = quyu
-        # print(quyu)
-    elif b==7:
-        zhishumi=zhishumi(a, c)
-        dict["jieguo"] = zhishumi
-        # print(zhishumi)
-
-    dict["number1"] = a
-    dict["number2"] = c
-    jisuanqi.write(str(dict))
-    jisuanqi.write("\n")
-    end=input("结束请输入Y")
-    if end=="Y" or end=="y":
-        break
-jisuanqi.close()
-
+# jisuanqi=open("jisuanqi.txt",mode="w",encoding="utf-8")
+# s="选择运算：1、相加 2、相减 3、相乘 4、相除  5、整除 6、取余 7、指数幂"
+# jisuanqi.write("提示信息:"+s)
+# jisuanqi.write("\n")
+#
+# for i in range(0,7):
+#     a=int(input("请输入第一个1-99999以内数字"))
+#     while True:
+#         if 1<a<99999:
+#             c=int(input("请输入第二个1-99999以内数字"))
+#             break
+#         else:
+#             jisuanqi.write("数字有误\n")
+#             print("输入的数字不在范围内，请重新输入")
+#             a = int(input("请输入第一个1-99999以内数字"))
+#
+#     print(s)
+#     dict={}
+#     b=int(input("请输入运算符对应的标码"))
+#     dict["xuhao"] = b
+#     if b==1:
+#         jia=add(a, c)
+#         dict["jieguo"]=jia
+#         # print(jia)
+#     elif b==2:
+#         jian=jian(a, c)
+#         dict["jieguo"] = jian
+#         # print(jian)
+#     elif b==3:
+#         cheng=cheng(a, c)
+#         dict["jieguo"] = cheng
+#         # print(cheng)
+#     elif b==4:
+#         chu=chu(a, c)
+#         dict["jieguo"] = chu
+#         # print(chu)
+#     elif b==5:
+#         zhengchu=zhengchu(a, c)
+#         dict["jieguo"] = zhengchu
+#         # print(zhengchu)
+#     elif b==6:
+#         quyu=yu(a,c)
+#         dict["jieguo"] = quyu
+#         # print(quyu)
+#     elif b==7:
+#         zhishumi=zhishumi(a, c)
+#         dict["jieguo"] = zhishumi
+#         # print(zhishumi)
+#
+#     dict["number1"] = a
+#     dict["number2"] = c
+#     jisuanqi.write(str(dict))
+#     jisuanqi.write("\n")
+#     end=input("结束请输入Y")
+#     if end=="Y" or end=="y":
+#         break
+# jisuanqi.close()
+#
 
 
 
@@ -136,7 +136,9 @@ for i in range(1,len(mess)):
         result=m["jieguo"]
         num1=m["number1"]
         num2=m["number2"]
+        # print(xuhao)
         panduan(xuhao,result,num1,num2)
+
 
 
 

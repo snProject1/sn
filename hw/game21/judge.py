@@ -1,10 +1,5 @@
 import json
-loser=set()
-dianshuGame=open("../log/xBao1.json",mode="r",encoding="utf-8")
-# dianshuGame=open("../log/zBao2.json",mode="r",encoding="utf-8")
-# dianshuGame=open("../log/xBao2.json",mode="r",encoding="utf-8")
-# 拿到日志,开始判断
-contents=json.load(dianshuGame)
+
 # 判断输赢,出测试结果
 def panDuan(wj):
     wjlist=wj["list"]
@@ -71,7 +66,6 @@ def panDuan(wj):
 def isPo(wj):
     # print(wj)
     wjlist = wj["list"]
-    # print(loser,wj["exit"])
     if wjlist[0]["coin"] < 100:
         if wjlist[0]["zhuangName"] in wj["exit"]:
             print("第{}局,破产测试通过,庄金币{},庄破产".format(wj["juNum"], wj["oldZhuang"]))
@@ -93,7 +87,12 @@ def isPo(wj):
         return True
 
 
-
+loser=set()
+dianshuGame=open("../log/xBao1.json",mode="r",encoding="utf-8")
+# dianshuGame=open("../log/zBao2.json",mode="r",encoding="utf-8")
+# dianshuGame=open("../log/xBao2.json",mode="r",encoding="utf-8")
+# 拿到日志,开始判断
+contents=json.load(dianshuGame)
 
 for wj in contents:
     # 庄没有破产且玩家人数大于1,出结果

@@ -59,7 +59,7 @@ class PointUtils:
         # 比完大小,看是否退出游戏,庄退出,游戏结束,闲全部退出,游戏结束
         if wj["coin"] < 100:
             self.loser.add(wj["name"])
-            print("闲{}退出游戏".format(s))
+            print("闲{}退出游戏".format(wj["name"]))
         elif self.wanjias[-1]["coin"] < 100:
             self.loser.add(self.wanjias[-1]["name"])
             print("庄{}退出游戏".format(self.wanjias[-1]["name"]))
